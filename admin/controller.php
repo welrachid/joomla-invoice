@@ -11,13 +11,13 @@ jimport('joomla.application.component.controller');
  
 class EPayController extends JControllerLegacy
 {
-    function display($cachable = false, $urlparams = false) 
-    {
+	function display($cachable = false, $urlparams = false) 
+	{
 		$input = JFactory::getApplication()->input;
 		$input->set('view', $input->getCmd('view', 'Transactions'));
 
 		parent::display($cachable);
-    }
+	}
 		
 	function show($cachable = false, $urlparams = false)
 	{
