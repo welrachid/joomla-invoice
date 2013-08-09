@@ -21,10 +21,10 @@ class EPayController extends JControllerLegacy
 		
 	function show($cachable = false, $urlparams = false)
 	{
-        $input = JFactory::getApplication()->input;
-        $input->set('view', $input->getCmd('view', 'Payment'));
+		$input = JFactory::getApplication()->input;
+		$input->set('view', $input->getCmd('view', 'Payment'));
 
-        parent::display($cachable);
+		parent::display($cachable);
 	}
 	
 	function handleorder($cachable = false, $urlparams = false)
