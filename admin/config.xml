@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component">
+		<field name="epay_merchant" type="text" label="Merchant number" description="Merchant number" />
+		<field name="epay_windowid" type="text" label="Window ID" description="Window ID" />
+        <field name="epay_windowstate" type="list" label="Window state" description="How the payment window should open.">
+            <option value="1">Overlay</option>
+            <option value="3">Full screen</option>
+        </field>
+		<field name="epay_useapi" type="radio" default="0" label="Use API" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="epay_group" type="text" default="" label="Group" description="This setting is used to assign the payment to a specific group within the payment system."></field>
+		<field name="epay_showemail" type="radio" default="1" label="Show E-mail" description="Show/Hide the e-mail field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_showname" type="radio" default="1" label="Show Name" description="Show/Hide the name field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_showaddress" type="radio" default="1" label="Show Address" description="Show/Hide the address field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_showcountry" type="radio" default="1" label="Show Country" description="Show/Hide the country field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_showphone" type="radio" default="1" label="Show Phone" description="Show/Hide the phone field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_showcomment" type="radio" default="1" label="Show Comment" description="Show/Hide the comment field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="epay_terms" type="menuitem" state="1" label="Menu containing terms" description="Select a menu item" />
+		<field name="epay_acceptterms" type="radio" default="1" label="Require accept terms" description="No/Yes the checkbox">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+        <field name="epay_currencies" type="list" multiple="true" label="Available currencies" description="Select one or more items from the list. You can use Ctrl-click to select more than one item.">
+                <option value="036">(AUD) Australian Dollar</option>
+                <option value="124">(CAD) Canadian Dollar</option>
+                <option value="208">(DKK) Danish Krone</option>
+                <option value="344">(HKD) Hong Kong Dollar</option>
+                <option value="352">(ISK) Iceland Krona</option>
+				<option value="392">(JPY) Yen</option>
+				<option value="484">(MXN) Mexican Peso</option>
+				<option value="554">(NZD) New Zealand Dollar</option>
+				<option value="578">(NOK) Norwegian Krone</option>
+				<option value="702">(SGD) Singapore Dollar</option>
+				<option value="710">(ZAR) Rand</option>
+				<option value="752">(SEK) Swedish Krona</option>
+				<option value="756">(CHF) Swiss Franc</option>
+				<option value="826">(GBP) Pound Sterling</option>
+				<option value="840">(USD) US Dollar</option>
+				<option value="949">(TRY) New Turkish Lira</option>
+				<option value="978">(EUR) Euro</option>
+				<option value="985">(PLN) Zloty</option>
+        </field>
+		<field name="epay_company" type="text" default="" label="Company name" description=""></field>
+		<field name="epay_companyemail" type="text" default="" label="Company e-mail" description=""></field>
+		<field name="epay_paymentconfirmation" type="text" default="" label="E-mail payment confirmation" description="If you have multiple receivers you can separate the list by semicolon (;)."></field>
+		<field name="epay_instantcapture" type="radio" default="0" label="Instant capture" description="This is used if you wish to capture the payments at the same time as it is authorized. This option may only be used if the cardholder receives the goods at once.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="epay_md5key" type="text" default="" label="MD5 key" description="This is the secret password you must enter both here and within the payment system if you enable MD5 above. Notice that the secret password must be 100% the same. Otherwise the customer will be declined as payments are made. You can log into your account on the payment system here. The MD5 settings are to be found from the menu Settings -> Payment System."></field>	
+		<field name="epay_authsms" type="text" default="" label="Auth SMS number" description="This is the secret password you must enter both here and within the payment system if you enable MD5 above. Notice that the secret password must be 100% the same. Otherwise the customer will be declined as payments are made. You can log into your account on the payment system here. The MD5 settings are to be found from the menu Settings -> Payment System."></field>
+		<field name="epay_authmail" type="text" default="" label="Auth E-mail" description="The auth mail setting is used if you need to receive an e-mail with payment information from the payment system as the payment is made. If you have multiple receivers you can separate the list by semicolon (;)."></field>
+	</fieldset>
+</config>

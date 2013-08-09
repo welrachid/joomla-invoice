@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>COM_EPAY</name>
+	<creationDate>August 2013</creationDate>
+	<author>ePay Payment Solutions - Michael Korsgaard</author>
+	<authorEmail>support@epay.dk</authorEmail>
+	<authorUrl>http://www.epay.dk</authorUrl>
+	<version>4</version>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+		<filename>callback.php</filename>
+		<filename>epay.php</filename>
+		<filename>index.html</filename>
+		<filename>mail-template.php</filename>
+		<filename>md5.php</filename>
+		<filename>controller.php</filename>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>views</folder>
+	</files>	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_epay.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.com_epay.ini</language>
+	</languages>
+	<administration>
+		<menu>COM_EPAY</menu>
+		<files folder="admin">
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<filename>config.xml</filename>	
+			<filename>controller.php</filename>
+			<filename>epay.php</filename>		
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_epay.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_epay.sys.ini</language>
+		</languages>
+		<media folder="admin" destination="com_epay/images">
+	  		<filename>images/epay.gif</filename>
+		</media>
+	</administration>
+</extension>
