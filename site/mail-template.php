@@ -54,42 +54,42 @@ $body = "
 											<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												" . JText::_('COM_EPAY_DATE_TIME') . "
 											</td>
-		                                    <td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; width: 350px; font-family: verdana, arial; font-size: 13px;\">
+											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; width: 350px; font-family: verdana, arial; font-size: 13px;\">
 												[date] [time]
 											</td>
-		                                </tr>
+										</tr>
 										<tr>
-		                                	<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
+											<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												" . JText::_('COM_EPAY_TRANSACTION_ID') . "
 											</td>
 											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; width: 350px; font-family: verdana, arial; font-size: 13px;\">
 												[tid]
 											</td>
-		                                </tr>
-		                                <tr>
+										</tr>
+										<tr>
 											<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 		 										" . JText::_('COM_EPAY_INVOICE') . "
 											</td>
 											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; width: 350px; font-family: verdana, arial; font-size: 13px;\">[orderid]</td>
 										</tr>
 										<tr>
-		                                    <td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
+											<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												" . JText::_('COM_EPAY_AMOUNT') . "
 											</td>
 											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												[amount] [cur]
 											</td>
-		                                </tr>
-		                                <tr>
-		                                    <td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
+										</tr>
+										<tr>
+										<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 		 										" . JText::_('COM_EPAY_CARD') . "
 											</td>
 											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												XXXX XXXX XXXX [cardnopostfix]
 											</td>
-		                                </tr>
+										</tr>
 										<tr>
-		                                    <td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
+											<td style=\"background-color: #EEEEEE; border-right: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
 												" . JText::_('COM_EPAY_TRANSACTION_FEE') . "
 											</td>
 											<td style=\"background-color: #EEEEEE; border-bottom: 3px solid #FFFFFF; padding: 4px; font-family: verdana, arial; font-size: 13px;\">
@@ -188,9 +188,9 @@ $body = "
 
 									$body .= "
 									</table>
-	                            </td>
-	                        </tr>		
-	                    	<tr>
+								</td>
+							</tr>		
+							<tr>
 								<td style=\"padding: 20px;\">";
 									$mycom_folder = JURI::base();
 
