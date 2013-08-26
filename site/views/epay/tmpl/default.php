@@ -17,10 +17,13 @@ if(@$_REQUEST['accept'] == 1)
 	
 	foreach ($getparams as $key => $value)
 	{
-		if($key != "hash")
+		if($key != "hash" && $key != "Itemid" && $key != "option" && $key != "view")
 		{
 			$var .= $value;
 		}
+		
+		if($key == "hash")
+			break;
 	}
 	
 	$genstamp = md5($var . $this->params->get('epay_md5key'));
@@ -270,7 +273,7 @@ if(@$_REQUEST['accept'] == 1)
 			var epayAuthmail = "<?php echo $this->params->get('epay_authmail') ?>";
 			var epayWindowstate = "<?php echo $this->params->get('epay_windowstate') ?>";
 			
-			epayAccepturl = epayAccepturl + "?" + ("&cemail=" + objForm.email.value + "&cname=" + objForm.name.value + "&caddress=" + objForm.address.value + "&ccountry=" + objForm.country.value + "&cphone=" + objForm.phone.value + "&ccomment=" + objForm.comment.value);
+			epayAccepturl = epayAccepturl + ("&cemail=" + objForm.email.value + "&cname=" + objForm.name.value + "&caddress=" + objForm.address.value + "&ccountry=" + objForm.country.value + "&cphone=" + objForm.phone.value + "&ccomment=" + objForm.comment.value);
 	        epayCallbackurl = epayCallbackurl + "?" + ("cemail=" + objForm.email.value + "&cname=" + objForm.name.value + "&caddress=" + objForm.address.value + "&ccountry=" + objForm.country.value + "&cphone=" + objForm.phone.value + "&ccomment=" + objForm.comment.value);
 			
 			var hashstring = epayOrderID + 
